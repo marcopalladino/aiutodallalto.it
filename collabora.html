@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collabora con noi – Aiuto dall'alto ODV</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+        .testimonial-card { background: var(--c-surface); border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--c-border); display: flex; flex-direction: column; align-items: center; text-align: center; transition: var(--transition); position: relative; overflow: hidden; }
+        .testimonial-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-xl); border-color: rgba(232,168,56,0.3); }
+        .testimonial-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 4px solid var(--c-accent); padding: 3px; }
+        .testimonial-quote { font-style: italic; color: var(--c-text); line-height: 1.7; margin-bottom: 1.5rem; font-size: 1.05rem; flex-grow: 1; }
+        .testimonial-author { font-weight: 700; color: var(--c-primary); font-size: 1.1rem; margin-bottom: 0.25rem; }
+        .testimonial-role { font-size: 0.85rem; color: var(--c-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+</head>
+<body>
+    <header class="site-header"><div class="header-inner"><a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo"><span>Aiuto dall'alto ODV</span></a><button class="menu-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="chi-siamo.html">Chi Siamo</a></li><li><a href="collabora.html" class="active">Collabora</a></li><li><a href="donazioni.html">Donazioni</a></li><li><a href="progetti.html">Progetti</a></li><li><a href="contatti.html">Contatti</a></li></ul></div></header>
+
+    <main>
+        <section class="page-hero" style="background: linear-gradient(rgba(26,58,92,0.8), rgba(26,58,92,0.8)), url('assets/img/volontari_catania.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/img/logo_big.png" alt="Logo" style="width: 100px; margin: 0 auto 1.5rem; border-radius: 50%;">
+            <h1>Collabora con noi</h1>
+            <p>Diventa parte del cambiamento. Racconta la tua storia.</p>
+        </section>
+
+        <section class="section fade-in">
+            <div class="section-center">
+                <div class="section-label">Unisciti a noi</div>
+                <h2 class="section-title">La nostra ricchezza sono le persone</h2>
+                <p class="section-desc">“Aiutare gli altri è la vera ricchezza nella vita. Un gesto gentile può fare una grande differenza per qualcuno che ne ha bisogno. Unitevi a noi per diffondere l’amore e la speranza.”</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <!-- Lidia -->
+                <div class="testimonial-card">
+                    <img src="assets/img/lidia.jpg" alt="Lidia Civiletto" class="testimonial-img">
+                    <p class="testimonial-quote">“Mi piace pensare come il detto africano che da soli si va veloci ma insieme si andrà più lontano!”</p>
+                    <div class="testimonial-author">Lidia Civiletto</div>
+                    <div class="testimonial-role">Fondatrice, CEO e Volontaria</div>
+                </div>
+
+                <!-- Tony -->
+                <div class="testimonial-card">
+                    <img src="assets/img/tony.jpg" alt="Tony Pupillo" class="testimonial-img">
+                    <p class="testimonial-quote">“L’aiuto che viene dall’alto alle persone bisognose, ha bisogno di canali, uomini e donne disposti a essere usati. La gratificazione è massima.”</p>
+                    <div class="testimonial-author">Tony Pupillo</div>
+                    <div class="testimonial-role">Vicepresidente e Volontario</div>
+                </div>
+
+                <!-- Maria Carota -->
+                <div class="testimonial-card">
+                    <img src="assets/img/maria_c.jpg" alt="Maria Carota" class="testimonial-img">
+                    <p class="testimonial-quote">“Aiutare gli altri ti gratifica tantissimo, ed è anche un’opportunità per ampliare nuovi orizzonti, fare nuove conoscenze e partecipare ad attività stimolanti.”</p>
+                    <div class="testimonial-author">Maria Carota</div>
+                    <div class="testimonial-role">Volontaria Segretaria</div>
+                </div>
+
+                <!-- Naomi Bruno -->
+                <div class="testimonial-card">
+                    <img src="assets/img/naomi.jpg" alt="Naomi Bruno" class="testimonial-img">
+                    <p class="testimonial-quote">“Nel vedere un sorriso o nel ricevere un abbraccio da parte di qualcuno che hai aiutato mi riempie il cuore di gioia e amore!”</p>
+                    <div class="testimonial-author">Naomi Bruno</div>
+                    <div class="testimonial-role">Coordinatrice Progetto SFD</div>
+                </div>
+
+                <!-- Lucia e Maria -->
+                <div class="testimonial-card">
+                    <img src="assets/img/lucia_maria.jpg" alt="Lucia e Maria" class="testimonial-img">
+                    <p class="testimonial-quote">“L’amore, la gentilezza, l’aiuto per il prossimo sono l’unico investimento che non fallisce mai!”</p>
+                    <div class="testimonial-author">Lucia e Maria</div>
+                    <div class="testimonial-role">Volontarie nei penitenziari</div>
+                </div>
+
+                <!-- Maria Grazia Gattano -->
+                <div class="testimonial-card">
+                    <img src="assets/img/mariagrazia.jpg" alt="Maria Grazia Gattano" class="testimonial-img">
+                    <p class="testimonial-quote">“Adoperarsi per il bene degli altri è un gesto di amore.”</p>
+                    <div class="testimonial-author">Maria Grazia Gattano</div>
+                    <div class="testimonial-role">Volontaria</div>
+                </div>
+
+                <!-- Elvira Ficara -->
+                <div class="testimonial-card">
+                    <img src="assets/img/elvira.jpg" alt="Elvira Ficara" class="testimonial-img">
+                    <p class="testimonial-quote">“Ama il prossimo tuo come te stesso.. L’amore muove ogni cosa e l’amore è Dio.”</p>
+                    <div class="testimonial-author">Elvira Ficara</div>
+                    <div class="testimonial-role">Volontaria</div>
+                </div>
+
+                <!-- Iolanda Orlando -->
+                <div class="testimonial-card">
+                    <img src="assets/img/iolanda.jpg" alt="Iolanda Orlando" class="testimonial-img">
+                    <p class="testimonial-quote">“Il volontariato ti dà l’opportunità di essere usata come strumento da Colui che vuole arrivare ai più deboli.”</p>
+                    <div class="testimonial-author">Iolanda Orlando</div>
+                    <div class="testimonial-role">Coordinatrice Progetti Inclusione</div>
+                </div>
+
+                <!-- Michel Avignone -->
+                <div class="testimonial-card">
+                    <img src="assets/img/michel_v.jpg" alt="Michel Avignone" class="testimonial-img">
+                    <p class="testimonial-quote">“C’è più gioia nel dare amore che nel riceverlo e questo desidero fare, perché questo ho ricevuto quando avevo molto bisogno.”</p>
+                    <div class="testimonial-author">Michel Avignone</div>
+                    <div class="testimonial-role">Consigliere Progetto Senzatetto</div>
+                </div>
+
+                <!-- Barbara -->
+                <div class="testimonial-card">
+                    <img src="assets/img/barbara.jpg" alt="Barbara" class="testimonial-img">
+                    <p class="testimonial-quote">“La Bibbia afferma che c’è gioia nel dare ed io la voglio sperimentare!”</p>
+                    <div class="testimonial-author">Barbara</div>
+                    <div class="testimonial-role">Coordinatrice Progetto P.I.S.</div>
+                </div>
+
+                <!-- Davide Romano -->
+                <div class="testimonial-card">
+                    <img src="assets/img/davide.jpg" alt="Davide Romano" class="testimonial-img">
+                    <p class="testimonial-quote">“Aiutare chi ha necessità fa sentire bene, chi riceve aiuto si sente amato. Mediante l’amore per il prossimo oltre a dare si riceve.”</p>
+                    <div class="testimonial-author">Davide Romano</div>
+                    <div class="testimonial-role">Coord. Relazioni Stakeholder</div>
+                </div>
+
+                <!-- Milena Piro -->
+                <div class="testimonial-card">
+                    <img src="assets/img/milena.jpg" alt="Milena Piro" class="testimonial-img">
+                    <p class="testimonial-quote">“Spendere le proprie energie per gli altri e non essere mai stanchi: perché Io, il Signore, fortifico la tua mano destra!”</p>
+                    <div class="testimonial-author">Milena Piro</div>
+                    <div class="testimonial-role">Volontaria</div>
+                </div>
+
+                <!-- Rebecca -->
+                <div class="testimonial-card">
+                    <img src="assets/img/rebecca.jpg" alt="Rebecca" class="testimonial-img">
+                    <p class="testimonial-quote">“Non è tanto quello che diamo, ma quanto amore mettiamo nel dare.”</p>
+                    <div class="testimonial-author">Rebecca</div>
+                    <div class="testimonial-role">Volontaria</div>
+                </div>
+
+                <!-- Marco Palladino -->
+                <div class="testimonial-card">
+                    <img src="assets/img/marco.jpg" alt="Marco Palladino" class="testimonial-img">
+                    <p class="testimonial-quote">“Ho conosciuto Aiuto dall’Alto e la coerenza e correttezza di queste persone mi hanno convinto che c’è ancora la possibilità di rialzare l’umanità verso l’alto!”</p>
+                    <div class="testimonial-author">Marco Palladino</div>
+                    <div class="testimonial-role">Marketing No-Profit e Volontario</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-narrow fade-in text-center">
+            <h2 class="section-title">Vuoi diventare un volontario?</h2>
+            <p style="color: var(--c-text-muted); margin-bottom: 2rem;">Contatta Lidia la fondatrice per un colloquio e per iniziare il tuo percorso formativo.</p>
+            <a href="mailto:info@aiutodallalto.it" class="btn btn-primary btn-lg">Candidati ora</a>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-grid"><div class="footer-brand"><div class="logo"><img src="assets/img/logo.png" alt="Logo"><span style="color: #fff; font-weight: 700;">Aiuto dall'alto ODV</span></div><p>Via Venezia Giulia, 3 — 95122 Catania (CT)<br>Cell: 327 427 8600 · info@aiutodallalto.it</p><div class="social-row"><a href="https://www.facebook.com/Ass.Aiuto" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com/aiuto_dallalto" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="#" class="wa-share" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.5.9L22 4Z"/><path d="M17 10a2 2 0 0 0-2-2"/></svg></a></div></div><div class="footer-col"><h4>Pagine</h4><a href="chi-siamo.html">Chi Siamo</a><a href="collabora.html">Collabora</a><a href="donazioni.html">Donazioni</a><a href="progetti.html">Progetti</a></div><div class="footer-col"><h4>Risorse</h4><a href="contatti.html">Contatti</a><a href="storia-michel.html">La storia di Michel</a><a href="mailto:info@aiutodallalto.it">Scrivici</a></div></div><div class="footer-bottom">© 2026 Aiuto dall'alto ODV</div></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
