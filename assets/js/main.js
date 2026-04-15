@@ -33,11 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (a.getAttribute('href') === currentPage) a.classList.add('active');
     });
 
-    // ── WhatsApp Share ──
-    const waLinks = document.querySelectorAll('.wa-share');
-    waLinks.forEach(link => {
-        const url = window.location.href;
-        const text = encodeURIComponent("Ciao! Guarda il sito di Aiuto dall'alto ODV: " + url);
-        link.href = `https://api.whatsapp.com/send?text=${text}`;
+    // ── WhatsApp Share (FAB) ──
+    const waShareBtns = document.querySelectorAll('.wa-fab-share');
+    waShareBtns.forEach(btn => {
+        const pageUrl = window.location.href;
+        const pageTitle = document.title;
+        const text = encodeURIComponent(`Ciao! Dai un'occhiata a "${pageTitle}" — ${pageUrl}`);
+        btn.href = `https://api.whatsapp.com/send?text=${text}`;
     });
 });
