@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 obs.unobserve(e.target);
             }
         });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.01 });
     document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
     // ── Active nav link ──

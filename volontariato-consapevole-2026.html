@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto di Formazione al Volontariato Consapevole 2026 – Aiuto dall'alto ODV</title>
+    <meta name="description" content="Corso di formazione al Volontariato Consapevole promosso da Aiuto dall'alto ODV con APS Costruiamo Ponti e CSVE: 52 ore di formazione, 8 incontri tematici ed esperienza sul campo. Scarica il modulo di iscrizione.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .project-meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.5rem 0 2rem;
+            justify-content: center;
+        }
+        .project-badge-pill {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 0.4rem 0.9rem;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        
+        .info-card-box {
+            background: var(--c-surface);
+            border: 1px solid var(--c-border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin: 1.75rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .meeting-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+        .meeting-item {
+            background: var(--c-surface);
+            border: 1px solid var(--c-border);
+            border-left: 4px solid var(--c-primary);
+            border-radius: var(--radius-sm);
+            padding: 1.35rem 1.5rem;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        .meeting-item:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-md);
+            border-left-color: var(--c-accent);
+        }
+        .meeting-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .meeting-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--c-primary);
+        }
+        .meeting-date {
+            display: inline-block;
+            background: var(--c-surface-alt);
+            color: var(--c-primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.65rem;
+            border-radius: var(--radius-full);
+            border: 1px solid var(--c-border);
+        }
+        .meeting-subtitle {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--c-accent-hover);
+            margin-bottom: 0.5rem;
+        }
+        .meeting-speakers {
+            background: var(--c-surface-alt);
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            color: var(--c-text);
+            margin-top: 0.75rem;
+            line-height: 1.5;
+        }
+        
+        .course-phases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .course-phase-card {
+            background: var(--c-surface);
+            border: 1px solid var(--c-border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+        .course-phase-card h3 {
+            font-size: 1.15rem;
+            color: var(--c-primary);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .course-phase-card .phase-hours {
+            display: inline-block;
+            background: rgba(232, 168, 56, 0.15);
+            color: #a36808;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: var(--radius-full);
+            margin-bottom: 0.75rem;
+        }
+
+        .checklist-ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1rem 0;
+        }
+        .checklist-ul li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.65rem;
+            line-height: 1.6;
+        }
+        .checklist-ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--c-accent-hover);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+                <span>Aiuto dall'alto ODV</span>
+            </a>
+            <button class="menu-toggle" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="collabora.html">Collabora</a></li>
+                <li><a href="donazioni.html">Donazioni</a></li>
+                <li><a href="progetti.html" class="active">Progetti</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background: linear-gradient(rgba(26,18,72,0.85), rgba(26,18,72,0.85)), url('assets/progetti/Volontariato%20Consapevole%202026%20quadrato.jpg'); background-size: cover; background-position: center;">
+            <div style="display: inline-block; background: var(--c-accent); color: var(--c-primary); font-weight: 700; font-size: 0.8rem; padding: 0.35rem 0.9rem; border-radius: var(--radius-full); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Progetto Formativo 2026</div>
+            <h1>Progetto di Formazione al Volontariato Consapevole</h1>
+            <p>Promosso dall'Associazione Aiuto dall'Alto in collaborazione con APS “Costruiamo Ponti”</p>
+            <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.25rem;">Progetto presentato al <strong>CSVE – Centro di Servizio per il Volontariato Etneo</strong></p>
+
+            <div class="project-meta-badges">
+                <span class="project-badge-pill">⏱ 52 Ore Complessive</span>
+                <span class="project-badge-pill">📅 8 Incontri Tematici</span>
+                <span class="project-badge-pill">🤝 20 Ore di Tirocinio sul Campo</span>
+                <span class="project-badge-pill">👥 Da 30 a 60 Partecipanti</span>
+                <span class="project-badge-pill">📍 Catania (Librino)</span>
+            </div>
+        </section>
+
+        <article class="article-body">
+            <!-- Locandina Progetto -->
+            <figure style="text-align: center; margin: 1.5rem 0 2.5rem;">
+                <img src="assets/progetti/Volontariato%20Consapevole%202026.jpg" alt="Locandina ufficiale Progetto Formazione Volontariato Consapevole 2026" style="max-width: 100%; max-height: 800px; width: auto; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); margin: 0 auto; display: inline-block;">
+                <figcaption style="font-size: 0.85rem; color: var(--c-text-muted); margin-top: 0.75rem;">
+                    Locandina ufficiale del Corso di Formazione al Volontariato Consapevole 2026
+                </figcaption>
+            </figure>
+
+            <!-- Introduzione -->
+            <h2>Introduzione</h2>
+            <p>L’Associazione Aiuto dall’Alto opera da anni nel territorio con attività di sostegno e accompagnamento rivolte alle persone che vivono condizioni di fragilità sociale. Attraverso iniziative di solidarietà, accoglienza e supporto, l’associazione promuove una cultura della prossimità e dell’attenzione verso le fasce più vulnerabili della popolazione.</p>
+            <p>Il presente progetto nasce dalla volontà di rafforzare e qualificare l’impegno dei volontari attraverso un percorso formativo strutturato, che consenta ai partecipanti di acquisire competenze relazionali, sociali ed etiche utili per operare in modo responsabile nei diversi contesti di intervento del volontariato.</p>
+            <p>L’obiettivo è quello di promuovere un volontariato consapevole e preparato, capace non solo di offrire aiuto concreto, ma anche di costruire relazioni significative con le persone in difficoltà, nel rispetto della dignità, dei bisogni e delle storie individuali.</p>
+
+            <!-- Analisi del contesto -->
+            <h2>Analisi del Contesto e Bisogni Formativi</h2>
+            <p>Nel territorio si registrano diverse situazioni di vulnerabilità sociale che richiedono interventi di supporto e accompagnamento. Tra queste emergono in particolare:</p>
+            <ul class="checklist-ul">
+                <li>Le condizioni di marginalità legate alla povertà e all'esclusione sociale</li>
+                <li>La presenza di persone senza dimora e senza fissa dimora</li>
+                <li>Le difficoltà di accoglienza e integrazione di cittadini stranieri e migranti</li>
+                <li>Le fragilità educative e familiari</li>
+                <li>L’aumento delle problematiche psicologiche e relazionali che coinvolgono adulti e minori</li>
+            </ul>
+            <p>In questo scenario il volontariato rappresenta una risorsa fondamentale per rafforzare la rete di solidarietà e di sostegno alle persone più fragili. Tuttavia, per svolgere questa attività in modo efficace è necessario che i volontari possano disporre di strumenti adeguati, sia sul piano delle conoscenze sia sul piano delle competenze relazionali.</p>
+            <p>Il progetto intende quindi rispondere a questo bisogno offrendo un percorso formativo che permetta ai partecipanti di comprendere meglio i contesti di intervento sociale e di sviluppare modalità di relazione rispettose, empatiche e consapevoli.</p>
+
+            <!-- Obiettivi del progetto -->
+            <h2>Obiettivi del Progetto</h2>
+            <p>Il progetto ha come obiettivo generale quello di promuovere la formazione di volontari consapevoli e preparati, in grado di operare nei contesti di fragilità sociale con responsabilità, sensibilità e competenza.</p>
+            <div class="info-card-box">
+                <p style="font-weight: 600; color: var(--c-primary); margin-bottom: 0.5rem;">Attraverso il percorso formativo si intende in particolare:</p>
+                <ul class="checklist-ul">
+                    <li>Offrire ai partecipanti una conoscenza di base delle principali realtà di vulnerabilità presenti nel territorio;</li>
+                    <li>Sviluppare competenze relazionali utili nella relazione di aiuto e nell'ascolto empatico;</li>
+                    <li>Sensibilizzare ai valori etici e sociali del volontariato e della solidarietà attiva;</li>
+                    <li>Promuovere una cultura della partecipazione civica e dell'inclusione;</li>
+                    <li>Rafforzare la rete di volontari che operano nelle attività dell’associazione e nelle strutture del territorio.</li>
+                </ul>
+            </div>
+
+            <!-- Destinatari -->
+            <h2>Destinatari</h2>
+            <p>Il corso è aperto e rivolto a:</p>
+            <ul class="checklist-ul">
+                <li><strong>Soci dell’Associazione Aiuto dall’Alto</strong> che desiderano approfondire la loro preparazione;</li>
+                <li><strong>Nuovi iscritti</strong> interessati ad avvicinarsi concretamente al mondo del volontariato;</li>
+                <li><strong>Tutte le persone</strong> desiderose di offrire il proprio tempo, il proprio cuore e le proprie competenze in contesti di bisogno.</li>
+            </ul>
+            <p>Il progetto prevede il coinvolgimento di un numero ampio di partecipanti, <strong>stimato tra 30 e 60 persone</strong>, al fine di favorire la diffusione di una cultura del volontariato e ampliare la rete di cittadini attivi nel territorio catanese.</p>
+
+            <!-- Struttura del percorso formativo -->
+            <h2>Struttura del Percorso Formativo (52 Ore)</h2>
+            <p>Il percorso formativo è stato progettato come un’esperienza completa che unisce momenti di approfondimento teorico a momenti di esperienza diretta sul campo, con l’obiettivo di offrire ai partecipanti strumenti concreti per svolgere l’attività di volontariato in modo consapevole e responsabile.</p>
+
+            <div class="course-phases-grid">
+                <div class="course-phase-card">
+                    <span class="phase-hours">Fase 1 · 32 Ore</span>
+                    <h3>1. Formazione Teorico-Pratica in Aula</h3>
+                    <p style="font-size: 0.95rem; color: var(--c-text);">Ciclo di <strong>8 incontri formativi</strong>, con cadenza quindicinale (due volte al mese) a partire da <strong>settembre 2026</strong> fino a dicembre 2026.</p>
+                    <p style="font-size: 0.9rem; color: var(--c-text-muted);">
+                        <strong>Orario:</strong> dalle 9:00 alle 13:00 (4 ore ciascuno con pausa caffè fra le due sessioni).<br>
+                        <strong>Suddivisione:</strong> 20 ore teoriche e 12 ore pratiche/laboratoriali.<br>
+                        <strong>Sede:</strong> Presso la sede del CSVE di Librino (qualora disponibile) o presso la sede dell'Associazione Aiuto dall'Alto.
+                    </p>
+                </div>
+                
+                <div class="course-phase-card">
+                    <span class="phase-hours">Fase 2 · 20 Ore</span>
+                    <h3>2. Esperienza Pratica sul Campo</h3>
+                    <p style="font-size: 0.95rem; color: var(--c-text);">Tirocinio pratico supervisionato, tra <strong>gennaio e febbraio 2027</strong>, per sperimentare direttamente sul territorio quanto appreso in aula.</p>
+                    <p style="font-size: 0.9rem; color: var(--c-text-muted);">
+                        <strong>Ambiti di attività:</strong> Case di riposo, case famiglia, comunità alloggio per minori, strutture di accoglienza e sostegno sociale, contesti educativi e socio-assistenziali.<br>
+                        <strong>Supporto:</strong> I volontari saranno costantemente affiancati da tutor ed operatori esperti con momenti di verifica e supervisione.
+                    </p>
+                </div>
+            </div>
+
+            <p>Il percorso sarà realizzato con la preziosa collaborazione dell’<strong>APS Costruiamo Ponti</strong>, che contribuirà alla realizzazione di alcune attività formative e alla rete di relazioni con le realtà del territorio.</p>
+
+            <!-- Contenuti della formazione -->
+            <h2>Contenuti della Formazione</h2>
+            <p>Durante gli incontri formativi verranno affrontati diversi temi legati al volontariato e alla relazione di aiuto:</p>
+            <ul class="checklist-ul">
+                <li><strong>Il significato e il valore sociale del volontariato:</strong> il ruolo del volontario nella società contemporanea, principi etici e responsabilità connesse al servizio al prossimo.</li>
+                <li><strong>La relazione di aiuto:</strong> ascolto attivo, comunicazione empatica, intelligenza emotiva, gestione dei conflitti e rispetto della dignità e della privacy delle persone assistite.</li>
+                <li><strong>Panoramica sui contesti di intervento:</strong> case di riposo, comunità alloggio per minori, strutture detentive minorili e reparti ospedalieri (pediatria, geriatria, oncologia).</li>
+                <li><strong>Sicurezza ed emergenza:</strong> nozioni fondamentali di sicurezza e corretta gestione delle situazioni critiche ed emergenziali nelle strutture.</li>
+            </ul>
+
+            <!-- Programma degli incontri -->
+            <h2>Programma Dettagliato degli Incontri</h2>
+            <p>Il percorso sarà articolato in <strong>8 incontri tematici</strong>, condotti da professionisti ed esperti nei diversi settori sociali. Ogni incontro prevede una sessione teorica, una sessione laboratoriale/interattiva e uno spazio conviviale di confronto.</p>
+
+            <div class="meeting-timeline">
+                <!-- Incontro 1 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">1° Incontro — Il Ruolo del Volontario</div>
+                        <span class="meeting-date">12 Settembre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Presenza, responsabilità e confini</div>
+                    <p>Presentazione del corso e approfondimento sulla figura del volontario e il servizio di volontariato. Momento conviviale e spazio di confronto tra i partecipanti.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverranno:</strong><br>
+                        • <strong>Lidia Civiletto</strong> — Presidente Associazione Aiuto dall'Alto<br>
+                        • <strong>Naomi Puglia</strong> — Assistente Sociale e Presidente APS “Costruiamo Ponti”<br>
+                        • <strong>Gianluca Costa</strong> — Psicologo
+                    </div>
+                </div>
+
+                <!-- Incontro 2 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">2° Incontro — Senza Fissa Dimora e Marginalità Sociale</div>
+                        <span class="meeting-date">26 Settembre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Volontariato come scelta di vita</div>
+                    <p>Comprensione delle condizioni di vita delle persone senza dimora e delle dinamiche della marginalità: bisogni in condizioni di estrema fragilità, vita in strada e ruolo del volontariato nel supporto concreto.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverrà:</strong><br>
+                        • <strong>Giuseppe Messina</strong> — Presidente APS “Insieme per ricominciare”
+                    </div>
+                </div>
+
+                <!-- Incontro 3 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">3° Incontro — Accoglienza e Integrazione dei Migranti</div>
+                        <span class="meeting-date">10 Ottobre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Viaggiatori sotto le stelle</div>
+                    <p>Accoglienza e integrazione delle persone migranti ed extracomunitarie: percorsi di inserimento sociale, sfide interculturali e contributo del volontariato per favorire una vera inclusione.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverranno:</strong><br>
+                        • <strong>Francesca Di Giorgio</strong> — Mediatrice culturale e Coordinatrice Centro Astalli<br>
+                        • <strong>Enos Nolli</strong> — Missionario e Coordinatore GIM Italia
+                    </div>
+                </div>
+
+                <!-- Incontro 4 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">4° Incontro — Comunicazione e Animazione per Bambini</div>
+                        <span class="meeting-date">24 Ottobre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Essere comunità educante: perché i bambini</div>
+                    <p>I bisogni educativi ed evolutivi dell'infanzia, l'apprendimento e le emozioni, i linguaggi efficaci del bambino, tecniche di animazione e storytelling, inserimento e gestione del bambino speciale nel gruppo di apprendimento.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverranno:</strong><br>
+                        • <strong>Maria Giustolisi</strong> — Insegnante e tecnico della riabilitazione psichiatrica<br>
+                        • <strong>Gabriela Giustolisi</strong> — Educatore professionale<br>
+                        • <strong>Debora Giustolisi</strong> — Insegnante
+                    </div>
+                </div>
+
+                <!-- Incontro 5 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">5° Incontro — Dall'Infanzia all'Adolescenza</div>
+                        <span class="meeting-date">7 Novembre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Comprendere per prevenire il bullismo</div>
+                    <p>I principali disturbi psicologici in età evolutiva e le modalità attraverso cui il volontario può riconoscere tempestivamente i segnali di disagio per instaurare una relazione di supporto efficace ed empatica.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverranno:</strong><br>
+                        • <strong>Naomi Puglia</strong> — Assistente Sociale<br>
+                        • <strong>Gianluca Costa</strong> — Psicologo
+                    </div>
+                </div>
+
+                <!-- Incontro 6 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">6° Incontro — Comunicazione e Partecipazione per Tutti</div>
+                        <span class="meeting-date">21 Novembre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">L'inclusione come responsabilità e valore cristiano</div>
+                    <p>Comprensione delle neurodivergenze nei bambini e supporto ai minori con bisogni educativi speciali (BES e ADHD): strategie inclusive e ruolo del volontariato a sostegno dei bambini e delle loro famiglie.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverranno:</strong><br>
+                        • <strong>Barbara Rossi</strong> — Logopedista<br>
+                        • <strong>Gabriella Raimondi</strong> — Presidente Associazione “ADHD” Sicilia<br>
+                        • <strong>Iolanda Orlanda</strong> — Insegnante di sostegno
+                    </div>
+                </div>
+
+                <!-- Incontro 7 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">7° Incontro — Testimonianza e Secolarizzazione</div>
+                        <span class="meeting-date">5 Dicembre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Spunti di riflessione per il volontariato cristiano</div>
+                    <p>Riflessione sul valore della testimonianza cristiana nel contesto odierno e sul modo in cui il volontariato diviene una forma concreta, autentica e viva di servizio al prossimo e di speranza.</p>
+                    <div class="meeting-speakers">
+                        <strong>Interverrà:</strong><br>
+                        • <strong>Rino Sciaraffa</strong> — Pastore evangelico, Coach, Formatore mondo no profit
+                    </div>
+                </div>
+
+                <!-- Incontro 8 -->
+                <div class="meeting-item">
+                    <div class="meeting-header">
+                        <div class="meeting-title">8° Incontro — Testimonianza attraverso le Esperienze di Vita</div>
+                        <span class="meeting-date">19 Dicembre 2026 · Ore 9:00 - 13:00</span>
+                    </div>
+                    <div class="meeting-subtitle">Servizio, incontro e speranza</div>
+                    <p>Incontro conclusivo di condivisione e riflessione congiunta: ascolto di storie concrete di servizio, confronto sui progressi svolti durante il percorso in aula e primo momento di restituzione e valutazione formativa.</p>
+                    <div class="meeting-speakers">
+                        <strong>A cura di:</strong> Associazione Aiuto dall'Alto e APS Costruiamo Ponti
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metodologia e Cronoprogramma -->
+            <h2>Metodologia, Cronoprogramma e Costi</h2>
+            <div class="info-card-box">
+                <h3 style="color: var(--c-primary); font-size: 1.1rem; margin-bottom: 0.5rem;">Metodologia Didattica</h3>
+                <p>Approccio altamente partecipativo che unisce lezioni teoriche a spazi aperti di dialogo, testimonianze di professionisti sul campo, discussioni guidate e role-playing, per favorire un apprendimento coinvolgente e lo sviluppo di solide competenze relazionali.</p>
+                
+                <h3 style="color: var(--c-primary); font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem;">Cronoprogramma</h3>
+                <ul class="checklist-ul">
+                    <li><strong>Settembre 2026:</strong> Promozione, raccolta iscrizioni e organizzazione logistica;</li>
+                    <li><strong>Settembre – Dicembre 2026:</strong> Svolgimento degli 8 incontri formativi quindicinali in aula;</li>
+                    <li><strong>Gennaio – Febbraio 2027:</strong> Esperienza pratica sul campo (20 ore) presso strutture partner territoriali;</li>
+                    <li><strong>Febbraio 2027:</strong> Restituzione finale, verifica risultati e consegna attestati.</li>
+                </ul>
+
+                <h3 style="color: var(--c-primary); font-size: 1.1rem; margin-top: 1.25rem; margin-bottom: 0.5rem;">Costi e Sostenibilità</h3>
+                <p style="margin-bottom: 0;">Il corso è finanziato grazie al contributo del <strong>CSVE (Centro di Servizio per il Volontariato Etneo)</strong> e ad eventuali donazioni, utilizzate per il rimborso spese dei docenti e professionisti coinvolti.</p>
+            </div>
+
+            <!-- Valutazione e Risultati attesi -->
+            <h2>Valutazione, Monitoraggio e Risultati Attesi</h2>
+            <p>Il progetto prevede questionari di autovalutazione per i partecipanti, feedback da parte delle strutture ospitanti e incontri periodici di verifica con tutor e formatori.</p>
+            <div class="pullquote">
+                "La formazione dei volontari rappresenta un passaggio fondamentale per rafforzare il valore sociale del volontariato e per rendere l'impegno solidale sempre più efficace, responsabile e significativo."
+            </div>
+
+            <!-- BOX DOWNLOAD MODULO ISCRIZIONE -->
+            <div class="download-cta-box" style="background: linear-gradient(135deg, #1a3a5c 0%, #0d2238 100%); border-radius: var(--radius-md); padding: 2.75rem 2rem; color: #fff; margin: 3.5rem 0 2rem; box-shadow: var(--shadow-xl); border: 2px solid var(--c-accent); text-align: center;">
+                <div style="display: inline-flex; align-items: center; justify-content: center; width: 68px; height: 68px; background: rgba(232,168,56,0.2); border-radius: 50%; margin-bottom: 1.25rem; color: var(--c-accent);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                </div>
+                
+                <h3 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 0.75rem; font-weight: 700;">Partecipa al Corso: Scarica il Modulo di Iscrizione</h3>
+                <p style="color: rgba(255,255,255,0.9); max-width: 580px; margin: 0 auto 1.75rem; font-size: 1rem; line-height: 1.6;">
+                    Scarica il modulo ufficiale in formato PDF, compilalo con i tuoi dati e consegnalo firmato via email o presso la nostra sede di Catania per confermare la tua adesione.
+                </p>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.75rem;">
+                    <a href="assets/progetti/Modulo_iscrizione_Volontariato_Consapevole_1.pdf" download="Modulo_iscrizione_Volontariato_Consapevole.pdf" class="btn" style="background: var(--c-accent); color: var(--c-primary); font-weight: 700; padding: 0.9rem 1.85rem; font-size: 1.05rem; border-radius: var(--radius-sm); border: none; display: inline-flex; align-items: center; gap: 0.6rem; box-shadow: 0 4px 15px rgba(232,168,56,0.4);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="12" y1="18" x2="12" y2="12"/>
+                            <polyline points="9 15 12 18 15 15"/>
+                        </svg>
+                        Scarica Modulo di Iscrizione (PDF)
+                    </a>
+                    
+                    <a href="https://wa.me/393274278600?text=Buongiorno%2C+vorrei+maggiori+informazioni+sull%27iscrizione+al+Corso+di+Volontariato+Consapevole+2026" class="btn btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.45); padding: 0.9rem 1.5rem; font-size: 0.95rem; border-radius: var(--radius-sm);" target="_blank" rel="noopener">
+                        Richiedi info su WhatsApp
+                    </a>
+                </div>
+                
+                <div style="font-size: 0.85rem; color: rgba(255,255,255,0.75); border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.25rem; max-width: 520px; margin: 0 auto; line-height: 1.6;">
+                    Puoi inviare il modulo compilato a: <strong style="color: #fff;">info@aiutodallalto.it</strong> oppure tramite WhatsApp al <strong>327 427 8600</strong>.<br>
+                    Sede: Via Venezia Giulia, 3 — 95122 Catania (CT).
+                </div>
+            </div>
+
+            <!-- Pulsanti navigazione -->
+            <div style="text-align: center; margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="progetti.html" class="btn btn-outline" style="color: var(--c-primary); border-color: var(--c-border);">← Torna ai Progetti</a>
+                <a href="collabora.html" class="btn btn-primary">Diventa Volontario</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Logo">
+                    <span style="color: #fff; font-weight: 700;">Aiuto dall'alto ODV</span>
+                </div>
+                <p>Via Venezia Giulia, 3 — 95122 Catania (CT)<br>Cell: 327 427 8600 · info@aiutodallalto.it</p>
+                <div class="social-row">
+                    <a href="https://www.facebook.com/Ass.Aiuto" class="facebook" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="https://instagram.com/aiuto_dallalto" class="instagram" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="https://wa.me/393274278600" class="whatsapp" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.5.9L22 4Z"/><path d="M17 10a2 2 0 0 0-2-2"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Pagine</h4>
+                <a href="chi-siamo.html">Chi Siamo</a>
+                <a href="collabora.html">Collabora</a>
+                <a href="donazioni.html">Donazioni</a>
+                <a href="progetti.html">Progetti</a>
+            </div>
+            <div class="footer-col">
+                <h4>Risorse</h4>
+                <a href="contatti.html">Contatti</a>
+                <a href="volontariato-consapevole-2026.html">Volontariato Consapevole</a>
+                <a href="storia-michel.html">La storia di Michel</a>
+                <a href="storia-veronica.html">La storia di Veronica</a>
+                <a href="mailto:info@aiutodallalto.it">Scrivici</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Aiuto dall'alto ODV</div>
+    </footer>
+
+    <!-- WhatsApp Share FAB -->
+    <a href="#" class="wa-fab wa-fab-share" target="_blank" rel="noopener" aria-label="Condividi su WhatsApp">
+        <span class="wa-fab-label">Condividi</span>
+        <span class="wa-fab-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
